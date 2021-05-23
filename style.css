@@ -1,7 +1,5 @@
 /* BASIC */
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,18 +77,18 @@ img {
   z-index: 100;
 }
 
-.sidebar > nav {
+.sidebar nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100%;
 }
 
-.sidebar > nav ul li {
+.sidebar nav ul li {
   margin-top: 1.5em;
 }
 
-.sidebar > nav ul li:first-child {
+.sidebar nav ul li:first-child {
   margin: 0;
 }
 
@@ -127,7 +125,7 @@ img {
 }
 
 /* INTRO SECTION */
-.intro {
+.intro-section {
   background-color: #5e42a6;
   display: flex;
   flex-direction: column;
@@ -145,7 +143,7 @@ img {
   font-size: 2.75em;
 }
 
-.intro p {
+.intro-section p {
   font-size: 1.25em;
 }
 
@@ -192,24 +190,24 @@ img {
 }
 
 /* WHO WE ARE SECTION*/
-section.one {
+.who-we-are-section {
   background-color: #5052b5;
 }
 
-section.one > section {
+.who-we-are-section section {
   display: flex;
   min-height: 22.5em;
 }
 
-section.one > section:nth-child(2) {
+.who-we-are-section section:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-section.one > section:last-child {
+.who-we-are-section section:last-child {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-section.one > section .image {
+.who-we-are-section section .image {
   width: 25em;
   display: block;
   background-size: cover;
@@ -217,15 +215,15 @@ section.one > section .image {
   background-repeat: no-repeat;
 }
 
-#one section:first-child .image {
+.who-we-are-section section:first-child .image {
   background-image: url('./images/octavian-rosca-e3OSaoc7EuE-unsplash.jpg');
 }
 
-#one section:nth-child(2) .image {
+.who-we-are-section section:nth-child(2) .image {
   background-image: url('./images/pono-lopez-qwoW4mdqjWw-unsplash.jpg');
 }
 
-#one section:last-child .image {
+.who-we-are-section section:last-child .image {
   background-image: url('./images/daniele-levis-pelusi-nEczFlV-GMI-unsplash.jpg');
 }
 
@@ -238,7 +236,7 @@ section.one > section .image {
 }
 
 /* WHAT WE DO SECTION*/
-section.two {
+.what-we-do-section {
   background: #b74e91;
 }
 
@@ -283,7 +281,7 @@ section.two {
 }
 
 /* GET IN TOUCH SECTION */
-section.three {
+.contact-section {
   background-color: #5e42a6;
 }
 
@@ -316,7 +314,7 @@ section.three {
   flex-basis: 100%;
 }
 
-label {
+.contact-wrapper label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.7em;
@@ -326,7 +324,7 @@ label {
 }
 
 .fields input,
-#message {
+.fields textarea {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 0.25em;
   border: none;
@@ -348,7 +346,7 @@ textarea:focus {
   box-shadow: 0 0 0 1px #ffffff;
 }
 
-#message {
+.fields textarea {
   overflow: hidden;
   resize: none;
   padding: 0.75em 1em;
@@ -482,7 +480,7 @@ textarea:focus {
     padding-top: 3.5em;
   }
 
-  .intro {
+  .intro-section {
     min-height: calc(100vh - 2.5em);
   }
 
@@ -496,21 +494,21 @@ textarea:focus {
 }
 
 @media screen and (max-width: 980px) {
-  .intro p br {
+  .intro-section p br {
     display: none;
   }
 
-  section.one > section {
+  .who-we-are-section > section {
     display: block;
   }
 
-  section.one > section .image {
+  .who-we-are-section > section .image {
     width: 100%;
     height: 50vh;
     min-height: 15em;
   }
 
-  section.one > section .content {
+  .who-we-are-section > section .content {
     width: 100%;
   }
 
@@ -557,7 +555,7 @@ textarea:focus {
     padding-top: 0;
   }
 
-  .intro {
+  .intro-section {
     padding: 2em 0;
     min-height: 0;
   }
@@ -566,15 +564,15 @@ textarea:focus {
     padding: 3em 2em 1em 2em;
   }
 
-  .intro h1 {
+  .intro-section h1 {
     font-size: 2em;
   }
 
-  .intro p {
+  .intro-section p {
     font-size: 1em;
   }
 
-  section.one > section .content {
+  .who-we-are-section > section .content {
     padding: 3em 2em 1em 2em;
   }
 
