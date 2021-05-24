@@ -18,31 +18,28 @@ body {
   background: #312450;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.section h1,
+.section h2,
+.section h3 {
   color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 0.5em 0;
 }
 
-h2 {
+.section h2 {
   font-size: 1.75em;
 }
 
-h3 {
+.section h3 {
   font-size: 1.1em;
 }
 
-p {
+.section p {
   margin: 0 0 2em 0;
 }
 
-a {
+.section a {
   text-decoration: none;
   color: inherit;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
@@ -54,12 +51,12 @@ a:hover {
   color: #ffffff;
 }
 
-ul {
+.section ul {
   list-style: none;
   margin-bottom: 2em;
 }
 
-img {
+.section img {
   max-width: 100%;
   display: block;
 }
@@ -388,7 +385,7 @@ textarea:focus {
   color: rgba(255, 255, 255, 0.15);
 }
 
-.footer-menu > li {
+.footer-menu li {
   display: inline-block;
   padding-left: 1.5em;
   margin-left: 1.5em;
@@ -396,7 +393,7 @@ textarea:focus {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
 }
 
-.footer-menu > li:first-child {
+.footer-menu li:first-child {
   border: 0;
   padding: 0;
   margin: 0;
@@ -576,7 +573,7 @@ textarea:focus {
     padding: 3em 2em 1em 2em;
   }
 
-  h2 {
+  .section h2 {
     font-size: 1.25em;
   }
 
@@ -589,7 +586,7 @@ textarea:focus {
     top: 2em;
   }
 
-  h3 {
+  .section h3 {
     font-size: 1em;
   }
 
