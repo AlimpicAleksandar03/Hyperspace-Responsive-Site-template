@@ -51,12 +51,12 @@ a:hover {
   color: #ffffff;
 }
 
-.section ul {
+ul {
   list-style: none;
   margin-bottom: 2em;
 }
 
-.section img {
+img {
   max-width: 100%;
   display: block;
 }
@@ -424,6 +424,7 @@ textarea:focus {
   }
 }
 
+/* SMALL DESKTOP  */
 @media screen and (max-width: 1280px) {
   body {
     font-size: 12pt;
@@ -543,6 +544,7 @@ textarea:focus {
   }
 }
 
+/* MEDIUM SCREEN DESKTOP */
 @media screen and (max-width: 736px) {
   .sidebar {
     display: none;
@@ -596,6 +598,7 @@ textarea:focus {
   }
 }
 
+/* MOBILE LAYOUT */
 @media screen and (max-width: 480px) {
   .actions {
     width: 100%;
